@@ -448,7 +448,7 @@ struct stream_in *audio_extn_ssr_get_stream()
 int32_t audio_extn_ssr_init(struct stream_in *in, int num_out_chan)
 {
     uint32_t ret = -1;
-    char c_multi_ch_dump[128] = {0};
+    char c_multi_ch_dump[152] = {0};
     uint32_t buffer_size;
 
     ALOGD("%s: ssr case, sample rate %d", __func__, in->config.rate);
